@@ -17,18 +17,30 @@ $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 
 
 
+/// Main brand color
+/// @type Color
+//$brand-color: #5D5AFD !default;
+$brand-color: #00CAF0 !default;
 
 /// Copy text color
 /// @type Color
-$text-color: rgb(34, 34, 34) !default;
+$text-color: #2f4858 !default;
 
-/// Main brand color
+/// Link color
 /// @type Color
-$brand-color: rgb(229, 0, 80) !default;
+$link-color: $brand-color !default;
+
+/// Link color:hover
+/// @type Color
+$link-hover-color: $brand-color !default;
+
+/// Darker brand color
+/// @type Color
+$dark-brand-color: #4d4ad0 !default;
 
 /// Light grey
 /// @type Color
-$light-grey: rgb(237, 237, 237) !default;
+$light-grey: #f1f2f6 !default;
 
 /// Medium grey
 /// @type Color
@@ -36,18 +48,13 @@ $mid-grey: rgb(153, 153, 153) !default;
 
 /// Dark grey
 /// @type Color
-$dark-grey: rgb(68, 68, 68) !default;
-
-
+$dark-grey: #333333 !default;
 
 
 
 /// Container's maximum width
 /// @type Length
 $max-width: 1180px !default;
-
-
-
 
 
 /// Breakpoints map
@@ -61,11 +68,8 @@ $breakpoints: (
 
 
 
-
-
-
 /// Relative or absolute URL where all assets are served from
 /// @type String
 /// @example scss - When using a CDN
 ///   $base-url: 'http://cdn.example.com/assets/';
-$base-url: '/assets/' !default;
+$base-url: 'https://zeug.co/test-03-18/assets/' !default;
