@@ -51,19 +51,37 @@ $mid-grey: rgb(153, 153, 153) !default;
 $dark-grey: #333333 !default;
 
 
+/// Waffle Grid System
 
-/// Container's maximum width
-/// @type Length
-$max-width: 1180px !default;
+// Class names
+// Change them to whatever you're used to
+$grid-classname: "grid" !default;
+$row-classname: "row" !default;
+$column-classname: "col" !default;
+$container-classname: "container" !default;
 
 
-/// Breakpoints map
-/// @prop {String} keys - Keys are identifiers mapped to a given length
-/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+// Column amounts, results in:
+// .col-n-of-4, or .col-n-of-8
+$grid-columns: (4, 8, 12) !default;
+
+// Gutter width
+$gutter-width: 20px !default;
+
+// Grid width and max-width.
+// It is automatically centered on the page.
+$grid-width: 960px !default;
+$grid-max-width: 80% !default;
+
+// Pushes and Pulls
+$pushes: true !default;
+$pulls: true !default;
+
+// Breakpoints. Structure:
+// name: (screen-width, column-amounts)
 $breakpoints: (
-  'small': 320px,
-  'medium': 768px,
-  'large': 1024px,
+	m: (840px, (4, 6, 8)),
+	s: (480px, (4, 6)),
 ) !default;
 
 
