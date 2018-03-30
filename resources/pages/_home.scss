@@ -6,5 +6,28 @@ body.home {
     background: #446CB3;
     clip-path: polygon(0 0,100% 0,100% calc(100% - 10vh),0% 100%);
     color: white;
+
+    ul {
+      li {
+        a {
+          color: white;
+          text-decoration: none;
+          font-weight: normal;
+        }
+      }
+    }
+
+    .hero {
+      padding: 5vh 0 15vh 0;
+
+      h1 {
+        margin-top: 0;
+        font-weight: 600;
+      }
+
+      p {
+        margin-bottom: 1.34em;
+      }
+    }
   }
 }
