@@ -1,3 +1,10 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+body.home {
+  header {
+    background: #446CB3;
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 10vh),0% 100%);
+    color: white;
+  }
+}
