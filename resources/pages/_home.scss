@@ -2,10 +2,16 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 body.home {
+  background: #f1f2f6;
+  
   header {
     background: #446CB3;
     clip-path: polygon(0 0,100% 0,100% calc(100% - 10vh),0% 100%);
     color: white;
+
+    section {
+      padding: 0;
+    }
 
     ul {
       li {
@@ -29,5 +35,13 @@ body.home {
         margin-bottom: 1.34em;
       }
     }
+  }
+
+  section {
+      padding: 5vh 0 15vh 0;
+
+      &.about {
+        background: white;
+      }
   }
 }
