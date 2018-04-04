@@ -1,3 +1,35 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+footer {
+  text-align: center;
+  background: $brand-color;
+
+  p {
+    display: inline-block;
+    color: white;
+  }
+
+  ul {
+    display: inline-block;
+
+    li {
+      display: inline;
+      list-style: none;
+
+      &:last-of-type a {
+        margin-right: 0;
+      }
+
+      a {
+        color: white;
+        margin-right: 25px;
+
+        &:hover {
+          color: #FECB44;
+        }
+      }
+    }
+  }
+}
